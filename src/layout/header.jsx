@@ -54,11 +54,36 @@ const Header = ({ isHome, isAbout, isProducts, isServices, isContact }) => {
                     </button>
                 </div>
                 <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'} mt-4`}>
-                    <a href="/" className="block py-2 text-primary">Beranda</a>
-                    <a href="about" className="block py-2 text-gray-600">Tentang Kami</a>
-                    <a href="products" className="block py-2 text-gray-600">Produk</a>
-                    <a href="services" className="block py-2 text-gray-600">Layanan</a>
-                    <a href="contact" className="block py-2 text-gray-600">Kontak</a>
+                    <a 
+                            href="/" 
+                        className={isHome ? `text-primary block py-2 ` : `text-gray-600 block py-2 `  }
+                        >
+                            Beranda
+                        </a>
+                        <a 
+                            href="about" 
+                        className={isAbout ? `text-primary block py-2 ` : `text-gray-600 block py-2 `}
+                        >
+                            Tentang Kami
+                        </a>
+                        <a 
+                            href="products" 
+                            className={isProducts ? `text-primary font-medium` : `text-gray-600 hover:text-primary`}
+                        >
+                            Produk
+                        </a>
+                        <a 
+                            href="services" 
+                            className={isServices ? `text-primary font-medium` : `text-gray-600 hover:text-primary`}
+                        >
+                            Layanan
+                        </a>
+                        <a 
+                            href="contact" 
+                            className={isContact ? `text-primary font-medium` : `text-gray-600 hover:text-primary`}
+                        >
+                            Kontak
+                        </a>
                 </div>
             </nav>
         </header>

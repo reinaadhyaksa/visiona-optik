@@ -14,7 +14,7 @@ export default function ContactPage() {
         });
     }, []);
     return (
-        <div className="bg-gray-50">
+        <div className="bg-gray-50 overflow-x-hidden">
             <Header isContact={true} />
             <HeroBanner title={"Hubungi Kami"} text={"Tim kami siap membantu semua kebutuhan penglihatan Anda"} />
             <ContactInfo />

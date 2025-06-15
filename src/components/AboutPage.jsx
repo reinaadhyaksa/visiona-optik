@@ -15,7 +15,7 @@ const AboutPage = () => {
     }, []);
 
     return (
-        <div className="bg-gray-50">
+        <div className="bg-gray-50 overflow-x-hidden">
             <Header isAbout={true} />
             <HeroBanner title={"Tentang Visiona Optik"} text={"Komitmen kami terhadap kesehatan mata dan kepuasan pelanggan"} />
             <StorySection />

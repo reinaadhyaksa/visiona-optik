@@ -10,7 +10,8 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif; }
+    font-family: 'Poppins', sans-serif; 
+}
 
 .animate-bounce {
     animation: bounce 2s infinite;
